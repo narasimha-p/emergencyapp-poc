@@ -1,0 +1,33 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-header>
+   <ion-item>
+  <ion-avatar slot="start">
+    <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+  </ion-avatar>
+  <ion-text>
+      <h6 class="username">John Doe</h6>
+       <p class="phonenumber">91234 45678</p>
+       </ion-text>
+</ion-item>
+      </ion-header>
+      <ion-content>
+          
+
+          
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item class="menu-item" [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

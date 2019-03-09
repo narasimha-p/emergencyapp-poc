@@ -1,0 +1,8 @@
+{
+  "name": "UserEmergency",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

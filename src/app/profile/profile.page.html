@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+      
+    <ion-title>profile</ion-title>
+    <ion-icon slot="end" name="create"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+   <!-- User Profile Create or Edite --> 
+<div class="user-profile-create_edit">
+ <ion-card padding>
+   <ion-item>
+  <ion-label position="floating">First Name</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+     
+  <ion-item>
+  <ion-label position="floating">Last Name</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+     
+     <ion-item>
+  <ion-label position="floating">Date of Birth</ion-label>
+  <ion-datetime display-format="MMM DD, YYYY"></ion-datetime>
+</ion-item>
+     
+      <ion-radio-group>
+    <ion-list-header>
+      <ion-label>Gender</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Male</ion-label>
+      <ion-radio slot="start" value="biff" checked></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Female</ion-label>
+      <ion-radio slot="start" value="griff"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+ </ion-card> 
+     <ion-button color="dark" expand="block" routerLink="/home" routerDirection="root">Continue</ion-button>
+</div>
+    
+    <!-- User Profile View -->
+<div class="user-profile-view"  style="display: none;">
+<ion-card padding text-center>
+<ion-avatar class="user-avatar">
+ <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+</ion-avatar>
+    <h3>John Doe</h3>
+     <p>91234 45678</p>
+</ion-card>  
+    
+ <ion-card padding>
+<ion-list>
+     <ion-item>
+    <label>Age</label>
+     <span>35</span>
+  </ion-item>
+    
+  <ion-item>
+    <label>Gender</label>
+     <span>Male</span>
+  </ion-item>
+</ion-list>
+</ion-card>
+    
+    
+</div>
+</ion-content>
